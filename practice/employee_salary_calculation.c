@@ -1,21 +1,21 @@
 #include <stdio.h>
 
 #define HRA_RATE 0.10
-#define DA_RATE  0.05
+#define TA_RATE  0.05
 
 int main() {
-    float basicPay, hra, da, salary;
+    float basicPay, hra, ta, salary;
 
     printf("Enter Basic Pay:\n");
     scanf("%f", &basicPay);
 
     hra = basicPay * HRA_RATE;
-    da  = basicPay * DA_RATE;
-    salary = basicPay + hra + da;
+    da  = basicPay * TA_RATE;
+    salary = basicPay + hra + ta;
 
     printf("Basic Pay : %.2f\n", basicPay);
     printf("HRA (10%%) : %.2f\n", hra);
-    printf("DA  (5%%) : %.2f\n", da);
+    printf("TA  (5%%) : %.2f\n", ta);
     printf("Total Salary : %.2f\n", salary);
 
     /*
